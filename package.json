@@ -1,0 +1,28 @@
+{
+  "name": "ninjavan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-app": "tailwindcss build -i ./src/tailwindcss/style.css -o ./dist/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivnditchon/ninjavan.git"
+  },
+  "keywords": [],
+  "author": "Ivan Ditchon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivnditchon/ninjavan/issues"
+  },
+  "homepage": "https://github.com/ivnditchon/ninjavan#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
+}
