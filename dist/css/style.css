@@ -583,8 +583,16 @@ video {
   top: 50%;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .bottom-0 {
   bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .z-50 {
@@ -614,11 +622,6 @@ video {
 .my-14 {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mt-2 {
@@ -675,6 +678,10 @@ video {
 
 .ml-8 {
   margin-left: 2rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -739,10 +746,6 @@ video {
 
 .h-20 {
   height: 5rem;
-}
-
-.h-24 {
-  height: 6rem;
 }
 
 .h-32 {
@@ -1159,6 +1162,11 @@ video {
   color: rgba(243, 244, 246, var(--tw-text-opacity));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
@@ -1177,10 +1185,6 @@ video {
 .text-olsoGray {
   --tw-text-opacity: 1;
   color: rgba(138, 144, 150, var(--tw-text-opacity));
-}
-
-.text-opacity-25 {
-  --tw-text-opacity: 0.25;
 }
 
 .antialiased {
@@ -1246,8 +1250,8 @@ video {
     left: 50%;
   }
 
-  .xl\:z-50 {
-    z-index: 50;
+  .xl\:z-40 {
+    z-index: 40;
   }
 
   .xl\:mx-5 {
@@ -1316,6 +1320,10 @@ video {
 
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:grid {
+    display: grid;
   }
 
   .xl\:hidden {
@@ -1401,6 +1409,10 @@ video {
     --tw-translate-x: -50%;
   }
 
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1435,6 +1447,10 @@ video {
 
   .xl\:justify-items-end {
     justify-items: end;
+  }
+
+  .xl\:gap-7 {
+    gap: 1.75rem;
   }
 
   .xl\:gap-10 {
@@ -1529,6 +1545,22 @@ video {
 
   .xl\:opacity-100 {
     opacity: 1;
+  }
+
+  .xl\:transition {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .xl\:duration-500 {
+    transition-duration: 500ms;
+  }
+
+  .xl\:ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
