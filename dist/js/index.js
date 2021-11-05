@@ -13,9 +13,21 @@ const index = {
             const header = index.elem['header']
             const navLinks = index.elem['navItems'].querySelectorAll('li');
             const arr = [...navLinks];
+            const headerMenuSec = header.querySelector('#menu');
+            const headerUserSec = header.querySelector('#user-icon');
 
             if (top >= 100) {
                 header.classList.add('bg-shark');
+
+                if (headerMenuSec.querySelector('svg')) {
+                    headerMenuSec.querySelector('svg').classList.add('text-gray-100');
+                    headerMenuSec.querySelector('svg').classList.remove('text-shark');
+                }
+                
+                if (headerUserSec.querySelector('svg')) {
+                    headerUserSec.querySelector('svg').classList.add('text-gray-100');
+                    headerUserSec.querySelector('svg').classList.remove('text-shark');
+                }
 
                 for (let i of arr) {
 
@@ -46,6 +58,17 @@ const index = {
                 } 
             } else {
                 header.classList.remove('bg-shark');
+
+                if (headerMenuSec.querySelector('svg')) {
+                    headerMenuSec.querySelector('svg').classList.remove('text-gray-100');
+                    headerMenuSec.querySelector('svg').classList.add('text-shark');
+                }
+
+                if (headerUserSec.querySelector('svg')) {
+                    headerUserSec.querySelector('svg').classList.remove('text-gray-100');
+                    headerUserSec.querySelector('svg').classList.add('text-shark');
+                }
+
                 
                 for (let i of arr) {
                     
