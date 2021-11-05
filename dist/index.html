@@ -18,11 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/head/ninja-favicon.ico">
-    <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <script src="./js/index.js" defer></script>
     <title>Leading Courier &amp; Logistics Company in Philippines &amp; SEA  | Ninja Van</title>
 </head>
 <body class="font-primary">
-    <header role="banner" class="flex justify-between sticky top-0 z-50 px-3 py-4 xl:justify-around xl:items-center">
+    <header role="banner" id="header" class="flex justify-between sticky top-0 z-50 px-3 py-4 xl:justify-around xl:items-center xl:transition xl:duration-500 xl:ease-in-out">
         <!-- Menu -->
         <button class="xl:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -32,42 +32,42 @@
         <!-- App Logo -->
         <img src="./images/header/app-logo-mob-header.svg" alt="Logo" class="h-8 object-contain xl:h-9">
         <nav role="navigation" class="hidden xl:block">
-            <ul class="flex items-center">
-                <li>
+            <ul id="nav-items" class="flex items-center">
+                <li class="pointer-events-none">
                     <a href="#" class="text-base text-shark font-bold uppercase antialiased tracking-wider">tracking</a>
                 </li>
-                <li class="ml-8">
+                <li class="ml-8 class="pointer-events-none"">
                     <a href="#" class="text-base text-shark font-bold uppercase antialiased tracking-wider">services</a>
                 </li>
-                <li class="ml-8">
+                <li class="ml-8 class="pointer-events-none"">
                     <a href="#" class="text-base text-shark font-bold uppercase antialiased tracking-wider">support</a>
                 </li>
-                <li class="ml-8">
+                <li class="ml-8 class="pointer-events-none"">
                     <a href="#" class="text-base text-shark font-bold uppercase antialiased tracking-wider">locate us</a>
                 </li>
-                <li class="ml-8">
+                <li class="ml-8 class="pointer-events-none"">
                     <a href="#" class="text-base text-shark font-bold uppercase antialiased tracking-wider">careers</a>
                 </li>
-                <li class="ml-8">
+                <li class="ml-8 pointer-events-none">
                     <div class="flex items-center">
                         <img src="./images/header-footer-flag/banner-phi-flag.png" alt="Philippines" class="h-7 object-contain rounded-full border border-olsoGray">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-shark" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="pointer-events-none">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" class="pointer-events-none"/>
                         </svg>
                     </div>
                 </li>
-                <li class="ml-8">
+                <li class="ml-8 pointer-events-none">
                     <div class="flex items-center">
                         <span class="text-base text-shark font-normal capitalize antialiased">english</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-shark" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="pointer-events-none">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" class="pointer-events-none"/>
                         </svg>
                     </div>
                 </li>
-                <li class="ml-8">
+                <li class="ml-8 pointer-events-none">
                     <button class="flex items-center">
                         <span class="text-base text-shark font-normal capitalize antialiased">login</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-shark" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="pointer-events-none">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" class="pointer-events-none"/>
                         </svg>
                     </button>
@@ -81,7 +81,7 @@
     </header>
     <main role="main">
         <div class="hidden xl:block xl:bg-hero-pattern xl:bg-cover xl:bg-center xl:bg-no-repeat xl:h-5/6 xl:absolute xl:top-0 xl:w-10/12 xl:left-1/2 xl:transform xl:-translate-x-1/2"></div>
-        <div class="px-5 pt-10 xl:py-10 xl:px-20 xl:mx-32 xl:mt-16 xl:relative xl:z-50">
+        <div class="px-5 pt-10 xl:py-10 xl:px-20 xl:mx-32 xl:mt-16 xl:relative xl:z-40">
             <div class="xl:flex xl:items-center">
                 <div class="xl:flex xl:flex-col">
                     <h1 class="text-2xl font-bold text-cardinal tracking-wider normal-case antialiased xl:text-5xl xl:leading-snug">Now also delivering business insights</h1>
@@ -91,7 +91,7 @@
                 <div class="bg-hero-pattern w-full h-80 bg-cover bg-right bg-no-repeat rounded-md xl:opacity-0"></div>
             </div>
         </div>
-        <div class="mt-8 xl:flex xl:relative xl:z-50 xl:mx-80 xl:justify-between xl:mt-32">
+        <div class="mt-8 xl:flex xl:relative xl:z-40 xl:mx-80 xl:justify-between xl:mt-32">
             <div class="relative flex flex-col items-center justify-center h-32 xl:flex-1 xl:h-full xl:border-r xl:border-cardinal">
                 <h4 class="py-1 text-cardinal text-3xl font-bold tracking-wider animate-bounce antialiased xl:text-4xl">97,000,000+</h4>
                 <span class="text-cardinal text-base font-light normal-case antialiased xl:text-lg">Southeast Asian served</span>
@@ -161,31 +161,40 @@
             </div>
             <div>
                 <p class="mt-10 text-center text-sm text-shark font-light tracking-wide antialiased normal-case">See our partners:</p>
-                <div class="glide relative mt-2">
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides">
-                            <li class="glide__slide my-auto"><img src="./images/main/ecommerce/bukalapak.webp" alt="Bukalapak" class="h-24 object-contain mx-auto"></li>
-                            <li class="glide__slide my-auto"><img src="./images/main/ecommerce/chilindo.webp" alt="Chilindo" class="h-20 object-contain mx-auto"></li>
-                            <li class="glide__slide my-auto"><img src="./images/main/ecommerce/frank.webp" alt="Frank" class="h-20 object-contain mx-auto"></li>
-                            <li class="glide__slide my-auto"><img src="./images/main/ecommerce/lazada.webp" alt="Lazada" class="h-20 object-contain mx-auto"></li>
-                            <li class="glide__slide my-auto"><img src="./images/main/ecommerce/sendo.webp" alt="Sendo" class="h-20 object-contain mx-auto"></li>
-                            <li class="glide__slide my-auto"><img src="./images/main/ecommerce/shopee.webp" alt="Shopee" class="h-20 object-contain mx-auto"></li>
-                            <li class="glide__slide my-auto"><img src="./images/main/ecommerce/tokopedia.webp" alt="Tokopedia" class="h-20 object-contain mx-auto"></li>
-                            <li class="glide__slide my-auto"><img src="./images/main/ecommerce/unilever.webp" alt="Unilever" class="h-20 object-contain mx-auto"></li>
-                            <li class="glide__slide my-auto"><img src="./images/main/ecommerce/zalora.webp" alt="Zalora" class="h-20 object-contain mx-auto"></li>
-                        </ul>
+                <div class="relative mt-3">
+                    <!-- For mobile devices -->
+                    <div id="next-slide" class="absolute left-0 top-1/2 transform -translate-y-1/2 xl:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
                     </div>
-                    <div class="glide__arrows absolute top-1/2 flex w-full justify-between transform -translate-y-1/2" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-shark text-opacity-25" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-shark text-opacity-25" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </button>
+                    <div id="prev-slide" class="absolute right-0 top-1/2 transform -translate-y-1/2 xl:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <div id="img-slider" class="xl:hidden">
+                        <img src="./images/main/ecommerce/bukalapak.webp" alt="Bukalapak" class="h-20 object-contain mx-auto block">
+                        <img src="./images/main/ecommerce/chilindo.webp" alt="Chilindo" class="h-20 object-contain mx-auto hidden">
+                        <img src="./images/main/ecommerce/frank.webp" alt="Frank" class="h-20 object-contain mx-auto hidden">
+                        <img src="./images/main/ecommerce/lazada.webp" alt="Lazada" class="h-20 object-contain mx-auto hidden">
+                        <img src="./images/main/ecommerce/sendo.webp" alt="Sendo" class="h-20 object-contain mx-auto hidden">
+                        <img src="./images/main/ecommerce/shopee.webp" alt="Shopee" class="h-20 object-contain mx-auto hidden">
+                        <img src="./images/main/ecommerce/tokopedia.webp" alt="Tokopedia" class="h-20 object-contain mx-auto hidden">
+                        <img src="./images/main/ecommerce/unilever.webp" alt="Unilever" class="h-20 object-contain mx-auto hidden">
+                        <img src="./images/main/ecommerce/zalora.webp" alt="Zalora" class="h-20 object-contain mx-auto hidden">
+                    </div>
+                    <!-- For desktop or laptop -->
+                    <div class="hidden xl:grid xl:grid-cols-3 xl:gap-7 xl:mx-60">
+                        <img src="./images/main/ecommerce/bukalapak.webp" alt="Bukalapak" class="h-20 object-contain mx-auto">
+                        <img src="./images/main/ecommerce/chilindo.webp" alt="Chilindo" class="h-20 object-contain mx-auto">
+                        <img src="./images/main/ecommerce/frank.webp" alt="Frank" class="h-20 object-contain mx-auto">
+                        <img src="./images/main/ecommerce/lazada.webp" alt="Lazada" class="h-20 object-contain mx-auto">
+                        <img src="./images/main/ecommerce/sendo.webp" alt="Sendo" class="h-20 object-contain mx-auto">
+                        <img src="./images/main/ecommerce/shopee.webp" alt="Shopee" class="h-20 object-contain mx-auto">
+                        <img src="./images/main/ecommerce/tokopedia.webp" alt="Tokopedia" class="h-20 object-contain mx-auto">
+                        <img src="./images/main/ecommerce/unilever.webp" alt="Unilever" class="h-20 object-contain mx-auto">
+                        <img src="./images/main/ecommerce/zalora.webp" alt="Zalora" class="h-20 object-contain mx-auto">
                     </div>
                 </div>
             </div>
@@ -392,10 +401,5 @@
         </div>
         <div class="absolute bottom-0 w-full h-1 bg-crimson"></div>
     </footer>
-    <!-- Using glider library for e-commerce slides -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-        new Glide('.glide').mount()
-    </script>
 </body>
 </html>
