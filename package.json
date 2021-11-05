@@ -21,8 +21,5 @@
     "autoprefixer": "^10.4.0",
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.19"
-  },
-  "dependencies": {
-    "@glidejs/glide": "^3.4.1"
   }
 }
