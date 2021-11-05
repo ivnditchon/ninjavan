@@ -24,8 +24,8 @@
 <body class="font-primary">
     <header role="banner" id="header" class="flex justify-between sticky top-0 z-50 px-3 py-4 xl:justify-around xl:items-center xl:transition xl:duration-500 xl:ease-in-out">
         <!-- Menu -->
-        <button class="xl:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button id="menu" class="xl:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-shark pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
@@ -75,9 +75,11 @@
             </ul>
         </nav>
         <!-- User icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 xl:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-        </svg>
+        <div id="user-icon" class="xl:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 pointer-events-none text-shark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+        </div>
     </header>
     <main role="main">
         <div class="hidden xl:block xl:bg-hero-pattern xl:bg-cover xl:bg-center xl:bg-no-repeat xl:h-5/6 xl:absolute xl:top-0 xl:w-10/12 xl:left-1/2 xl:transform xl:-translate-x-1/2"></div>
