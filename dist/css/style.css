@@ -1259,9 +1259,14 @@ video {
     margin-right: 1.25rem;
   }
 
-  .xl\:mx-14 {
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
+  .xl\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .xl\:mx-28 {
+    margin-left: 7rem;
+    margin-right: 7rem;
   }
 
   .xl\:mx-32 {
@@ -1269,19 +1274,19 @@ video {
     margin-right: 8rem;
   }
 
+  .xl\:mx-44 {
+    margin-left: 11rem;
+    margin-right: 11rem;
+  }
+
+  .xl\:mx-56 {
+    margin-left: 14rem;
+    margin-right: 14rem;
+  }
+
   .xl\:mx-60 {
     margin-left: 15rem;
     margin-right: 15rem;
-  }
-
-  .xl\:mx-80 {
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-
-  .xl\:mx-96 {
-    margin-left: 24rem;
-    margin-right: 24rem;
   }
 
   .xl\:my-0 {
@@ -1289,17 +1294,17 @@ video {
     margin-bottom: 0px;
   }
 
-  .xl\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+  .xl\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .xl\:mt-0 {
     margin-top: 0px;
   }
 
-  .xl\:mt-16 {
-    margin-top: 4rem;
+  .xl\:mt-8 {
+    margin-top: 2rem;
   }
 
   .xl\:mt-24 {
@@ -1334,24 +1339,20 @@ video {
     height: 2.25rem;
   }
 
-  .xl\:h-14 {
-    height: 3.5rem;
+  .xl\:h-11 {
+    height: 2.75rem;
   }
 
-  .xl\:h-16 {
-    height: 4rem;
+  .xl\:h-40 {
+    height: 10rem;
   }
 
   .xl\:h-44 {
     height: 11rem;
   }
 
-  .xl\:h-52 {
-    height: 13rem;
-  }
-
-  .xl\:h-60 {
-    height: 15rem;
+  .xl\:h-auto {
+    height: auto;
   }
 
   .xl\:h-5\/6 {
@@ -1382,8 +1383,8 @@ video {
     width: 80%;
   }
 
-  .xl\:w-10\/12 {
-    width: 83.333333%;
+  .xl\:w-11\/12 {
+    width: 91.666667%;
   }
 
   .xl\:w-full {
@@ -1500,6 +1501,11 @@ video {
     background-repeat: no-repeat;
   }
 
+  .xl\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .xl\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -1515,14 +1521,24 @@ video {
     padding-bottom: 2.5rem;
   }
 
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .xl\:text-4xl {
@@ -1530,13 +1546,12 @@ video {
     line-height: 2.5rem;
   }
 
-  .xl\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .xl\:leading-snug {
     line-height: 1.375;
+  }
+
+  .xl\:tracking-wider {
+    letter-spacing: 0.05em;
   }
 
   .xl\:opacity-0 {
